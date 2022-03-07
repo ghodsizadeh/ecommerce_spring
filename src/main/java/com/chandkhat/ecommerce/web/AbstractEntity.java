@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models;
+package com.chandkhat.ecommerce.web;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;

@@ -1,9 +1,9 @@
-package com.chandkhat.ecommerce.web.models.order;
+package com.chandkhat.ecommerce.web.order;
 
-import com.chandkhat.ecommerce.web.models.AbstractEntity;
-import com.chandkhat.ecommerce.web.models.Address;
-import com.chandkhat.ecommerce.web.models.cart.Cart;
-import com.chandkhat.ecommerce.web.models.payment.Payment;
+import com.chandkhat.ecommerce.web.AbstractEntity;
+import com.chandkhat.ecommerce.web.Address;
+import com.chandkhat.ecommerce.web.cart.Cart;
+import com.chandkhat.ecommerce.web.payment.Payment;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;

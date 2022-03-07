@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.payment;
+package com.chandkhat.ecommerce.web.payment;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

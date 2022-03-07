@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.product;
+package com.chandkhat.ecommerce.web.product;
 
 public enum ProductStatus {
     AVAILABLE, DISCONTINUED

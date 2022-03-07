@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.category;
+package com.chandkhat.ecommerce.web.category;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

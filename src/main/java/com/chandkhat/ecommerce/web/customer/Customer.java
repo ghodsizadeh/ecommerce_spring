@@ -1,7 +1,7 @@
-package com.chandkhat.ecommerce.web.models.customer;
+package com.chandkhat.ecommerce.web.customer;
 
-import com.chandkhat.ecommerce.web.models.AbstractEntity;
-import com.chandkhat.ecommerce.web.models.cart.Cart;
+import com.chandkhat.ecommerce.web.AbstractEntity;
+import com.chandkhat.ecommerce.web.cart.Cart;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;

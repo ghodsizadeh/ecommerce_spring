@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.cart;
+package com.chandkhat.ecommerce.web.cart;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.order;
+package com.chandkhat.ecommerce.web.order;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

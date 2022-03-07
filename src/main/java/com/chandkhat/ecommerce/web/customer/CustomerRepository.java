@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.customer;
+package com.chandkhat.ecommerce.web.customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

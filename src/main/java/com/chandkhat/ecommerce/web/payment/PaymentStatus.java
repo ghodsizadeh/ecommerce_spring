@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web.models.payment;
+package com.chandkhat.ecommerce.web.payment;
 
 public enum PaymentStatus {
     ACCEPTED, PENDING, REFUSED, ERROR

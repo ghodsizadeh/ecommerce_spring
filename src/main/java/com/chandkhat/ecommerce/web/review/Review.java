@@ -1,6 +1,6 @@
-package com.chandkhat.ecommerce.web.models.review;
+package com.chandkhat.ecommerce.web.review;
 
-import com.chandkhat.ecommerce.web.models.AbstractEntity;
+import com.chandkhat.ecommerce.web.AbstractEntity;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
