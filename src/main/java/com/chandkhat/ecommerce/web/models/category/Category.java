@@ -1,6 +1,7 @@
 package com.chandkhat.ecommerce.web.models.category;
 
 import com.chandkhat.ecommerce.web.models.AbstractEntity;
+import com.chandkhat.ecommerce.web.models.product.Product;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
@@ -13,6 +14,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -31,5 +33,5 @@ public class Category extends AbstractEntity {
 
     @OneToMany(mappedBy = "category")
     @JsonIgnore
-    private  Set<Product> products = new HashSet<>();
+    private Set<Product> products = new HashSet<>();
 }

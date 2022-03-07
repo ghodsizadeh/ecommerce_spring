@@ -1,6 +1,7 @@
 package com.chandkhat.ecommerce.web.models.order;
 
 import com.chandkhat.ecommerce.web.models.AbstractEntity;
+import com.chandkhat.ecommerce.web.models.product.Product;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;

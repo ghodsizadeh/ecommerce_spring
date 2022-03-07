@@ -2,6 +2,7 @@ package com.chandkhat.ecommerce.web.models.product;
 
 import com.chandkhat.ecommerce.web.models.AbstractEntity;
 import com.chandkhat.ecommerce.web.models.category.Category;
+import com.chandkhat.ecommerce.web.models.review.Review;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,6 +12,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.HashSet;
+import java.util.Set;
 
 
 @Data
