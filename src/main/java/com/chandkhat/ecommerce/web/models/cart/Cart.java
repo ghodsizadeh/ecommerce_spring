@@ -2,6 +2,7 @@ package com.chandkhat.ecommerce.web.models.cart;
 
 import com.chandkhat.ecommerce.web.models.AbstractEntity;
 import com.chandkhat.ecommerce.web.models.customer.Customer;
+import com.chandkhat.ecommerce.web.models.order.Order;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +21,7 @@ public class Cart extends AbstractEntity {
 
     @OneToOne
     @JoinColumn(unique = true)
-    private  Order order;
+    private Order order;
 
     @ManyToMany
     private Customer customer;
