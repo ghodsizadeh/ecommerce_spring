@@ -1,6 +1,7 @@
 package com.chandkhat.ecommerce.web.models.cart;
 
 import com.chandkhat.ecommerce.web.models.AbstractEntity;
+import com.chandkhat.ecommerce.web.models.customer.Customer;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,7 +23,7 @@ public class Cart extends AbstractEntity {
     private  Order order;
 
     @ManyToMany
-    private  Customer customer;
+    private Customer customer;
 
     @NotNull
     @Enumerated(EnumType.STRING)
