@@ -88,6 +88,12 @@ public class CartService {
         }
         return null;
     }
+
+    public List<CartDto> findAll() {
+        List<Cart> carts = this.cartRepository.findAll();
+        return carts.stream().map(CartService::mapToDto)
+                .collect(Collectors.toList());
+    }
 }
 
 
