@@ -23,7 +23,7 @@ public class Cart extends AbstractEntity {
     @JoinColumn(unique = true)
     private Order order;
 
-    @ManyToMany
+    @ManyToOne
     private Customer customer;
 
     @NotNull
