@@ -1,4 +1,4 @@
-package com.chandkhat.ecommerce.web;
+package com.chandkhat.ecommerce.web.order;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,6 @@
 package com.chandkhat.ecommerce.web.order;
 
 import com.chandkhat.ecommerce.web.AbstractEntity;
-import com.chandkhat.ecommerce.web.Address;
 import com.chandkhat.ecommerce.web.cart.Cart;
 import com.chandkhat.ecommerce.web.payment.Payment;
 import com.fasterxml.jackson.annotation.JsonIgnore;
