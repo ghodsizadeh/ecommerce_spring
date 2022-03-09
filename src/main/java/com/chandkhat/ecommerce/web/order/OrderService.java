@@ -1,6 +1,7 @@
 package com.chandkhat.ecommerce.web.order;
 
 import com.chandkhat.ecommerce.web.cart.Cart;
+import com.chandkhat.ecommerce.web.payment.PaymentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -8,6 +9,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -62,7 +65,8 @@ public class OrderService {
                         null,
                         null,
                         null,
-                        Collections.emptySet())
+                        Collections.emptySet(),
+                        null)
                 )
         );
     }

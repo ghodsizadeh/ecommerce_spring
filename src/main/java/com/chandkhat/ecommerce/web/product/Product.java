@@ -32,8 +32,9 @@ public class Product extends AbstractEntity {
     @NotNull
     @Column(name = "price", precision = 10, scale = 2, nullable = false)
     private BigDecimal price;
-    @Column(name = "quantity")
-    private Integer quantity;
+//
+//    @Column(name = "quantity")
+//    private Integer quantity;
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)

@@ -11,6 +11,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 import java.util.Set;
 
@@ -22,6 +23,10 @@ import java.util.Set;
 @Entity
 @Table(name = "order")
 public class Order extends AbstractEntity {
+
+    @NotNull
+    @Column(name = "total_price", precision = 10, scale = 2, nullable = false)
+    private BigDecimal totalPrice;
 
     @NotNull
     @Enumerated(EnumType.STRING)

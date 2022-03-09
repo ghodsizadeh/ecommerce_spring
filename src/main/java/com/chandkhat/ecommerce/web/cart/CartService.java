@@ -3,7 +3,9 @@ package com.chandkhat.ecommerce.web.cart;
 
 import com.chandkhat.ecommerce.web.customer.Customer;
 import com.chandkhat.ecommerce.web.customer.CustomerRepository;
+import com.chandkhat.ecommerce.web.customer.CustomerService;
 import com.chandkhat.ecommerce.web.order.Order;
+import com.chandkhat.ecommerce.web.order.OrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -28,7 +30,7 @@ public class CartService {
         return new CartDto(
                 cart.getId(),
                 cart.getOrder(),
-                CustsomerSerice.mapToDto(cart.getCustomer()),
+                CustomerService.mapToDto(cart.getCustomer()),
                 cart.getStatus().name()
         );
     }
@@ -55,7 +57,7 @@ public class CartService {
             return mapToDto(this.cartRepository.save(cart));
 
         } else {
-            throw new IllegalStateException("There is already an acive cart");
+            throw new IllegalStateException("There is already an active cart");
         }
     }
 

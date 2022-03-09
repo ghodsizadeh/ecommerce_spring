@@ -1,5 +1,6 @@
 package com.chandkhat.ecommerce.web.category;
 
+import com.chandkhat.ecommerce.web.product.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -50,7 +51,7 @@ public class CategoryService {
         log.debug("Request to create Category : {}", categoryDto);
         return mapToDto(this.categoryRepository.save(
                 new Category(categoryDto.getName(),
-                        categoryDto.getDesctiption(),
+                        categoryDto.getDescription(),
                         Collections.emptySet()
                         )));
     }

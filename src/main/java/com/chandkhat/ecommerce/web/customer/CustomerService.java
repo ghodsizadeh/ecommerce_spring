@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -31,21 +33,22 @@ public class CustomerService {
         return mapToDto(
                 this.customerRepository.save(
                         new Customer(
-                        customerDto.getFirstName(),
-                        customerDto.getLastName(),
-                        customerDto.getEmail(),
-                        customerDto.getTelephone(),
-                        Collections.emptySet(),
-                        Boolean.TRUE
-                )));
+                                customerDto.getFirstName(),
+                                customerDto.getLastName(),
+                                customerDto.getEmail(),
+                                customerDto.getTelephone(),
+                                Boolean.TRUE,
+                                Collections.emptySet()
+                        )));
     }
-        public List<CustomerDto> findAll () {
-            log.debug("Request to get all Customers");
-            return this.customerRepository.findAll()
-                    .stream()
-                    .map(CustomerService::mapToDto)
-                    .collect(Collectors.toList());
-        }
+
+    public List<CustomerDto> findAll() {
+        log.debug("Request to get all Customers");
+        return this.customerRepository.findAll()
+                .stream()
+                .map(CustomerService::mapToDto)
+                .collect(Collectors.toList());
+    }
 
     @Transactional(readOnly = true)
     public CustomerDto findById(Long id) {

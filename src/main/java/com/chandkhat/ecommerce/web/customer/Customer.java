@@ -30,6 +30,9 @@ public class Customer extends AbstractEntity {
     @Column(name = "telephone")
     private String telephone;
 
+    @Column(name = "enabled")
+    private Boolean enabled;
+
     @OneToMany(mappedBy = "customer")
     @JsonIgnore
     private Set<Cart> carts;

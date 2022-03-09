@@ -2,12 +2,14 @@ package com.chandkhat.ecommerce.web.product;
 
 import com.chandkhat.ecommerce.web.category.CategoryRepository;
 import com.chandkhat.ecommerce.web.review.Review;
+import com.chandkhat.ecommerce.web.review.ReviewService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -58,6 +60,10 @@ public class ProductService {
 
         return mapToDto(this.productRepository.save(
                 new Product(
+
+
+
+
                         productDto.getName(),
                         productDto.getDescription(),
                         productDto.getPrice(),
