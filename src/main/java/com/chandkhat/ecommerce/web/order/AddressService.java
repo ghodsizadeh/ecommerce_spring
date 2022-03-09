@@ -1,5 +1,7 @@
 package com.chandkhat.ecommerce.web.order;
 
+import org.springframework.stereotype.Service;
+
 public class AddressService {
 
     public static AddressDto mapToDto(Address address) {

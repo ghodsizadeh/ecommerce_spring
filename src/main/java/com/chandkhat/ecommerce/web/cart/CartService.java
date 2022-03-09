@@ -52,7 +52,7 @@ public class CartService {
             Order order = this.orderService.create(cart);
             cart.setOrder(order);
 
-            return mapToDto(this.cartRepository.save(Cart));
+            return mapToDto(this.cartRepository.save(cart));
 
         } else {
             throw new IllegalStateException("There is already an acive cart");

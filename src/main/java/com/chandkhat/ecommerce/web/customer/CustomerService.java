@@ -29,14 +29,16 @@ public class CustomerService {
     public CustomerDto create(CustomerDto customerDto) {
         log.debug("Request to create Customer : {}", customerDto);
         return mapToDto(
-                this.customerRepository.save(new Customer(
+                this.customerRepository.save(
+                        new Customer(
                         customerDto.getFirstName(),
                         customerDto.getLastName(),
                         customerDto.getEmail(),
                         customerDto.getTelephone(),
                         Collections.emptySet(),
                         Boolean.TRUE
-                ))
+                )));
+    }
         public List<CustomerDto> findAll () {
             log.debug("Request to get all Customers");
             return this.customerRepository.findAll()
@@ -44,7 +46,6 @@ public class CustomerService {
                     .map(CustomerService::mapToDto)
                     .collect(Collectors.toList());
         }
-    }
 
     @Transactional(readOnly = true)
     public CustomerDto findById(Long id) {

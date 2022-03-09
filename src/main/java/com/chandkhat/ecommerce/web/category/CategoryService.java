@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -25,7 +26,7 @@ public class CategoryService {
                 category.getId(),
                 category.getName(),
                 category.getDescription(),
-                category.getProducts().stream().map(ProductServicr::mapToDto).collect(Collectors.toSet())
+                category.getProducts().stream().map(ProductService::mapToDto).collect(Collectors.toSet())
         );
 
     }
