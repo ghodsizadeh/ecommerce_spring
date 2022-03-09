@@ -6,6 +6,10 @@ That's all we know! 👨‍💻
 
 
 
+Automatic deployment on Heroku:
+
+https://spring-ecommerce-22.herokuapp.com/
+
 ------
 Based on:
 https://leanpub.com/playing-with-java-microservices-on-k8s-and-ocp
